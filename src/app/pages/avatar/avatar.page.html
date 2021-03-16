@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">  
+      <ion-back-button defaultHref="/"
+      text="back"  
+       color="primary"
+      ></ion-back-button>
+   </ion-buttons>
+    <ion-title>avatar</ion-title>
+
+    <ion-buttons slot="end"> 
+          <ion-avatar>
+            <!-- <img src="/assets/yordy.jpg" /> -->
+            <ion-img src="/assets/yordy.jpg" ></ion-img>
+          </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+   <ion-chip color="primary" mode="ios" outline="true" *ngFor="let items of [1,1,1,1]">
+    <ion-avatar>  <ion-img src="/assets/yordy.jpg"></ion-img> </ion-avatar>
+     <ion-label>Default</ion-label>
+   </ion-chip>
+    
+   <ion-list>
+     <ion-item >
+       <ion-avatar slot="start">
+         <img src="/assets/yordy.jpg"/>
+       </ion-avatar>
+       <ion-label>Yordy Manuel</ion-label>
+     </ion-item>
+   </ion-list>
+
+</ion-content>
